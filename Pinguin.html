@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+    body{
+        background-color: aliceblue;
+        background-image: url('https://media.cntraveller.com/photos/611be87c24f18e2bd3cbdfdc/4:3/pass/7antarctica-april2020issue-tom.jpg');
+        #background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+
+    <h1>Kaiser Pinguin</h1>
+
+<style>
+    h1{
+        color: rgb(rgb(163, 23, 23), rgb(84, 204, 84), rgb(88, 88, 145));
+        font-size: 30px;
+        text-transform: capitalize;
+        font: Courier;
+        background-color: aliceblue;
+        
+    }
+</style>
+
+
+<button type="Button" onclick="alert('This is not a Penguin')"><img src= "https://static.vecteezy.com/system/resources/thumbnails/001/193/929/small/vintage-car.png" alt = ""></button>
+
+<style>
+    button{
+        transition-duration: 0.2s;
+        cursor: pointer;
+        position: relative;
+        padding: none;
+        display: inline-block;
+        background-color: transparent;
+    }
+</style>
+
+<button type="Button" onclick="alert('This is a Penguin')"><img src= "https://static-cdn.jtvnw.net/jtv_user_pictures/5a00c42d-44e6-48fd-8d42-464fc9a3bc21-profile_image-70x70.png" alt = ""></button>
+
+<style>
+    button{
+        margin: 4px 8px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        position: relative;
+        padding: auto;
+        display: inline-block;
+    }
+</style>
+
+
+
+
+<button type="Button" onclick = "show()">Kill the Penguin</button>
+
+<script>
+    function show() {
+        /* Access image by id and change
+        the display property to block*/
+        document.getElementById('image')
+            .style.display = "block";
+        document.getElementById('btnID')
+            .style.display = "none";
+    }
+</script>
+
+<img id="image" src="https://www.fisheries.noaa.gov/s3/styles/original/s3/dam-migration/640x427-california-sea-lion.png?itok=1TJJaSqK" alt ="">
+
+<style>
+    image{
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        position: relative;
+        animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+            from {left: 200px;}
+            to {left: 40px;}
+        }
+</style>
+
+
+<p>Both work in cold weather just fine.</p>
+<p>The latter consumes fish as fuel the other Petroleum.</p>
+<p>Now you know everything there is to know about penguins!</p>
+
+
+<style>
+    p{
+        background-color: aliceblue;
+    }
+</style>
+
+</body>
+</html>

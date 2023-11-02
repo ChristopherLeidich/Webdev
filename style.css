@@ -1,0 +1,216 @@
+body{
+    background-color: rgb(201, 197, 197);
+}
+
+#first{
+    background-color: black;
+}
+
+a { 
+    font-family: monospace;
+    font-weight: bold; 
+    color:black;
+}
+
+a:link{
+    font-size: 0.87em;
+    text-decoration: none;
+}
+
+a:hover, .intext:hover{
+    color: #808080;
+}
+
+#fp > *{
+    color: white;
+}
+
+.fip{
+    font-family: monospace;
+    font-weight: bold; 
+    color:white;
+}
+.fip:link{
+    font-size: 0.87em;
+    text-decoration: none;
+}
+
+.firstpage{
+    color: white;
+    background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
+}
+
+/* .saedr{
+    background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
+    filter: blur(2px);
+    z-index: 0;
+    background-repeat: no-repeat;
+} */
+
+.environment > .tranparent{
+    position: fixed;
+    float: right;
+    text-align: left;
+    z-index: 0;
+    filter: blur(0);
+}
+
+.tranparentp{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    text-align:right;
+}
+
+
+.hero-container{
+    position: relative;
+    padding: 25px 50px;
+    text-align: left;
+}
+
+.environment{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index:-2;
+    filter: blur(2px);
+    background: url(https://images.unsplash.com/photo-1602136773736-34d445b989cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80) center no-repeat;
+    background-size: cover;
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+  
+.stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 2rem;
+    color: white;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    };
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+  
+@keyframes glitch {
+    0% {    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+            transform: translate(var(--glitch-translate));
+    }
+    2% {    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    4%, 100% {  text-shadow: none; transform: none; 
+    }
+}
+
+#email{
+    font-family: 'Times New Roman', serif;
+    font-weight: bold; 
+    color: white;
+    z-index:1;
+}
+
+#email:link{
+    font-size: 1.1em;
+    text-decoration: italic;
+}
+
+#email:hover{
+    color:#808080;
+}
+
+address > p {
+    color: white;
+}
+
+.vacation{
+    position:fixed;
+    z-index:1;
+}
+
+td{
+    text-align: center;
+}
+
+#pause{
+    background-color: #D6EEEE
+}
+
+.intext{
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color:black;
+}
+
+.intext:link{
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+aside {
+    display: block;
+    padding-left: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-style: italic;
+    z-index:1;
+  }
+  
+  aside > p {
+    margin: auto;
+  }
+  
+.container {
+    width: 40%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    z-index:0; 
+  }
+
+.player, article{
+    position: relative;
+    top: 8px;
+    left: 180px;
+  }
+
+nav{
+    position:absolute;
+    z-index:1;
+}
