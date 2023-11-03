@@ -1,7 +1,9 @@
+/*affects all elements bound to this style.css*/
 body{
-    background-color: rgb(201, 197, 197);
+    background-color: rgb(201, 197, 197);  
 }
 
+/*section for Stykes exclusive to the firstpage.html*/
 #first{
     background-color: black;
 }
@@ -39,6 +41,8 @@ a:hover, .intext:hover{
     color: white;
     background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
 }
+
+/*Needs to be set right*/
 
 /* .saedr{
     background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
@@ -83,6 +87,7 @@ a:hover, .intext:hover{
     background-size: cover;
 }
 
+/*Start of the text Animation*/
 .stack {
     display: grid;
     grid-template-columns: 1fr;
@@ -154,6 +159,9 @@ a:hover, .intext:hover{
 address > p {
     color: white;
 }
+
+/*firstpage.html styles end*/
+
 
 .vacation{
     position:fixed;
