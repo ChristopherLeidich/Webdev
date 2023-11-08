@@ -1,3 +1,31 @@
+/* Section for defining Custom Fonts */
+
+@font-face
+{
+    font-family: DevilSummoner;
+    src:url('/home/christopher/Downloads/devil_summoner/devilsummonercondital.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Songket;
+    src: url('/home/christopher/Downloads/songket_minang/SONGKET.ttf');
+}
+
+@font-face {
+    font-family: BM-Space;
+    src: url('/home/christopher/Downloads/bm-space/BMSPA___.TTF');
+}
+
+@font-face {
+    font-family: AlphaO;
+    src: url('/home/christopher/Downloads/alpha_2/Alpha-Outline.otf');
+}
+
+@font-face {
+    font-family: PostAntiqua;
+    src: url('/home/christopher/Downloads/PostAntiqua/postant1.ttf');
+}
+
 /*affects all elements bound to this style.css*/
 body{
     background-color: rgb(201, 197, 197);  
@@ -28,10 +56,17 @@ a:hover, .intext:hover{
 }
 
 .fip{
-    font-family: monospace;
+    font-family: BM-Space;
     font-weight: bold; 
     color:white;
 }
+
+sub > .fip{
+    font-family: Monospace;
+    /*font-weight: bold; 
+    color:white;*/
+}
+
 .fip:link{
     font-size: 0.87em;
     text-decoration: none;
@@ -39,17 +74,18 @@ a:hover, .intext:hover{
 
 .firstpage{
     color: white;
-    background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
 }
 
 /*Needs to be set right*/
 
-/* .saedr{
+.saedr{
     background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
     filter: blur(2px);
     z-index: 0;
+    position: relative;
+    float: ce;
     background-repeat: no-repeat;
-} */
+}
 
 .environment > .tranparent{
     position: fixed;
@@ -59,13 +95,17 @@ a:hover, .intext:hover{
     filter: blur(0);
 }
 
-.tranparentp{
-    position:absolute;
-    right: 0;
+footer {
+    float: right;
     bottom: 0;
-    width: 100px;
-    text-align:right;
 }
+
+/*#tranparentp{
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    width: 100px;
+}*/
 
 
 .hero-container{
@@ -95,6 +135,7 @@ a:hover, .intext:hover{
   
 .stack span {
     font-weight: bold;
+    font-family: BM-Space;
     grid-row-start: 1;
     grid-column-start: 1;
     font-size: 2rem;
@@ -171,6 +212,11 @@ address > p {
 td{
     text-align: center;
 }
+
+tr:hover td {
+    background-color: lightblue;
+}
+
 
 #pause{
     background-color: #D6EEEE
