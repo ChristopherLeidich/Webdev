@@ -3,7 +3,7 @@
 @font-face
 {
     font-family: DevilSummoner;
-    src:url('/home/christopher/Downloads/devil_summoner/devilsummonercondital.ttf') format('truetype');
+    src:url('/Fonts/devil_summoner/devilsummonercondital.ttf') format('truetype');
 }
 
 @font-face {
@@ -97,7 +97,9 @@ sub > .fip{
 
 footer {
     float: right;
+    position: fixed;
     bottom: 0;
+    right: 0;
 }
 
 /*#tranparentp{
