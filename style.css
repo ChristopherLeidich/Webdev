@@ -3,27 +3,27 @@
 @font-face
 {
     font-family: DevilSummoner;
-    src:url('/Fonts/devil_summoner/devilsummonercondital.ttf') format('truetype');
+    src:url('Fonts/devil_summoner/devilsummonercondital.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Songket;
-    src: url('/home/christopher/Downloads/songket_minang/SONGKET.ttf');
+    src: url('Fonts/songket_minang/SONGKET.ttf');
 }
 
 @font-face {
     font-family: BM-Space;
-    src: url('/home/christopher/Downloads/bm-space/BMSPA___.TTF');
+    src: url('Fonts/bm-space/BMSPA___.TTF');
 }
 
 @font-face {
     font-family: AlphaO;
-    src: url('/home/christopher/Downloads/alpha_2/Alpha-Outline.otf');
+    src: url('/Fonts/alpha_2/Alpha-Outline.otf');
 }
 
 @font-face {
     font-family: PostAntiqua;
-    src: url('/home/christopher/Downloads/PostAntiqua/postant1.ttf');
+    src: url('Fonts/PostAntiqua/postant1.ttf');
 }
 
 /*affects all elements bound to this style.css*/
@@ -31,7 +31,7 @@ body{
     background-color: rgb(201, 197, 197);  
 }
 
-/*section for Stykes exclusive to the firstpage.html*/
+/*section for Styles exclusive to the firstpage.html*/
 #first{
     background-color: black;
 }
@@ -63,8 +63,7 @@ a:hover, .intext:hover{
 
 sub > .fip{
     font-family: Monospace;
-    /*font-weight: bold; 
-    color:white;*/
+    
 }
 
 .fip:link{
@@ -80,11 +79,16 @@ sub > .fip{
 
 .saedr{
     background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
-    filter: blur(2px);
-    z-index: 0;
-    position: relative;
-    float: ce;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .environment > .tranparent{
