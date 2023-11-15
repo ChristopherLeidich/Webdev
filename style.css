@@ -3,27 +3,27 @@
 @font-face
 {
     font-family: DevilSummoner;
-    src:url('Fonts/devil_summoner/devilsummonercondital.ttf') format('truetype');
+    src:url('./Fonts/devil_summoner/devilsummonercondital.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Songket;
-    src: url('Fonts/songket_minang/SONGKET.ttf');
+    src: url('./Fonts/songket_minang/SONGKET.ttf') format('truetype');
 }
 
 @font-face {
     font-family: BM-Space;
-    src: url('Fonts/bm-space/BMSPA___.TTF');
+    src: url('./Fonts/bm-space/BMSPA___.TTF') format('truetype');
 }
 
 @font-face {
     font-family: AlphaO;
-    src: url('/Fonts/alpha_2/Alpha-Outline.otf');
+    src: url('./Fonts/alpha_2/Alpha-Outline.otf') format('truetype');
 }
 
 @font-face {
     font-family: PostAntiqua;
-    src: url('Fonts/PostAntiqua/postant1.ttf');
+    src: url('./Fonts/PostAntiqua/postant1.ttf') format('truetype');
 }
 
 /*affects all elements bound to this style.css*/
@@ -33,7 +33,93 @@ body{
 
 /*section for Styles exclusive to the firstpage.html*/
 #first{
-    background-color: black;
+    background-color: rgb(0,0,0);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.menu li a {
+    text-decoration: none;
+    align-self: center;
+    font-size: 14px;
+    padding: 16px 20px;
+    color: #fff;
+}
+
+#checkbox,
+    .toggle {
+  display: none;
+}
+
+
+.untoggle {
+  display: inline;
+}
+
+.menu li a:hover {
+    color: #808080;
+}
+  
+@media screen and (max-width: 500px) {
+    .toggle {
+     float: left;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .untoggle{
+        display: none;
+    }
+  
+    #checkbox:checked + label .menu li {
+      opacity: 1;
+      visibility: visible;
+    }
+   
+    #checkbox:checked + label .menu {
+      height: 200px;
+    }
+
+    #checkbox:checked + label .toggle{
+        background: rgb(44, 43, 43);
+        text-align: center;
+    }
+   
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 0px;
+      background: #443f3f;
+    }
+
+    .menu li {
+      display: flex;
+      align-self: center;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .menu li a {
+      width: 100%;
+      text-align: center;
+      align-self: center;
+      align-content: center;
+    }
 }
 
 a { 
