@@ -81,13 +81,13 @@
                     $radioVal = $_POST["kurs"];
 
                     if($radioVal == "Webdev"){
-                        echo("You chose the first button. Good choice. :D");
+                        echo("Herr Schwarzer ist Stolz auf dich");
                     } else if ($radioVal == "SWQ") {
-                        echo("Second, eh?");
+                        echo("I see you are a Thielen Enjoyer yourself");
                     } else if ($radioVal == "AppDev") {
-                        echo("Third, ok?");
+                        echo("Weakest Flutter-Enjoyer Right here.");
                     } else if ($radioVal == "GUI") {
-                        echo("Last? You wanna be special?");
+                        echo("The Python is Strong in you young one");
                     }
                 }
             ?>

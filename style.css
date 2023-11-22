@@ -161,22 +161,6 @@ sub > .fip{
     color: white;
 }
 
-/*Needs to be set right*/
-
-.saedr{
-    background-image: url("https://www.shadowrun6.de/downloads/spielhilfen/logos/logo-saeder_krupp-2080.png");
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .environment > .tranparent{
     position: fixed;
     float: right;
@@ -192,12 +176,6 @@ footer {
     right: 0;
 }
 
-/*#tranparentp{
-    position: fixed;
-    bottom: 8px;
-    right: 16px;
-    width: 100px;
-}*/
 
 
 .hero-container{
@@ -219,7 +197,7 @@ footer {
     background-size: cover;
 }
 
-/*Start of the text Animation*/
+/*Start of the text Animation Script Inspired by https://codepen.io/aldrie/pen/PojGYLo*/
 .stack {
     display: grid;
     grid-template-columns: 1fr;
